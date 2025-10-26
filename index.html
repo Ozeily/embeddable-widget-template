@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customisation Interface</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="settings">
+        <b>Settings</b>
+        <form>
+            <div class="setting">
+                <label for="rounded">Rounded corners</label>
+                <input type="checkbox" name="rounded" class="toggle" id="rounded" checked>
+            </div>
+            <div class="setting">
+                <label for="text">Text</label> 
+                <input type="text" name="text" id="text" value="I'm the widget">
+            </div>
+            <div class="setting">
+                <label for="font">Font</label>
+                <select name="font" id="font">
+                    <option value="Arial" selected>Arial</option>
+                    <option value="Helvetica">Helvetica</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                </select>
+            </div>
+            <div class="setting">
+                <label for="primary">Primary colour (text)</label>
+                <input type="color" name="primary" id="primary">
+            </div>
+            <div class="setting">
+                <label for="secondary">Secondary colour (border)</label>
+                <input type="color" name="secondary" id="secondary">
+            </div>
+            <div class="setting">
+                <label for="bg-colour">Background colour</label>
+                <input type="color" name="bg-colour" id="bg-colour">
+            </div>
+            
+        </form>
+        <button type="button" onclick="copyURL()">Copy URL</button>
+    </div>
+    <iframe src="widget/widget.html"></iframe>
+</body>
+</html>

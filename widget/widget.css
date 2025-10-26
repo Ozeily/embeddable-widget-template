@@ -1,0 +1,45 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: var(--outline) /*debug*/
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  color-scheme: light dark; /*enables setting two colors for a property, depending on light/dark mode c.f : https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark*/
+
+  --outline: none; /*for debug. don't use this for customisation!*/
+  --bg-colour: #808080;
+  --primary: #FFFFFF;
+  --secondary: #696969;
+  --font: Arial;
+}
+
+/* STYLE */
+
+body { display: flex; }
+
+#widget {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+
+  font-family: var(--font);
+  font-size: 10vw; /*adjusts to widget width (window width)*/
+  background-color: var(--bg-colour);
+  color: var(--primary);
+  border: 2px solid var(--secondary);
+}
+
+.rounded {
+  border-radius: 15px;
+}
